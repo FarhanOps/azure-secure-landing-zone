@@ -1,0 +1,17 @@
+
+├── 📁 modules/               # Reusable Terraform components
+│   ├── networking/          # Hub-spoke VNet, NSGs, Private Link
+│   ├── kubernetes/          # AKS with OPA Gatekeeper
+│   ├── monitoring/          # Azure Monitor + Prometheus
+│   └── iam/                 # Custom RBAC roles
+├── 📁 gitops/               # ArgoCD application manifests
+├── 📁 docs/                 # Professional documentation
+│   ├── ARCHITECTURE.md      # Diagram + design decisions
+│   ├── COST_OPTIMIZATION.md # FinOps strategies applied
+│   └── ADRs/               # Architecture Decision Records
+├── 📄 .github/              # CI/CD workflows
+│   └── workflows/
+│       ├── terraform-plan.yml
+│       └── infra-scan.yml   # Checkov + Terrascan
+├── 📄 LICENSE               # Apache 2.0
+└── 📄 README.md             # Professional project overview
