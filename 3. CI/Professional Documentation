@@ -1,0 +1,15 @@
+## Design Decisions
+![Architecture Diagram](docs/architecture.png)
+
+### Key Components
+1. **Zero-Trust Networking**
+   - Private AKS + Azure Firewall
+   - NSG Flow Logs to Sentinel
+
+2. **Compliance as Code**
+   - Terraform + Azure Policy (CIS Benchmark)
+   - OPA Gatekeeper for Kubernetes
+
+3. **Cost Controls**
+   - Auto-scaling with Cluster Autoscaler
+   - Budget alerts via Azure Cost Management
